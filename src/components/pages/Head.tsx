@@ -6,7 +6,7 @@ const Head: React.FC = () => {
 
   return (
     <header>
-      <div className="flex flex-col items-center justify-center min-h-screen bg-gray-200">
+      <div className="">
         <HeaderTop lang={lang} setLang={setLang} />
       </div>
     </header>
