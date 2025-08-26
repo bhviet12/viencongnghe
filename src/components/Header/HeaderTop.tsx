@@ -7,7 +7,7 @@ interface HeaderTopProps {
 }
 
 const HeaderTop: React.FC<HeaderTopProps> = ({ lang, setLang }) => {
-  const text = lang === "en" ? content.en.headertop : content.vi;
+  const text = lang === "en" ? content.en.headertop : content.vi.headertop;
 
   return (
     <>
