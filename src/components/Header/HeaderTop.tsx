@@ -49,23 +49,23 @@ const HeaderTop: React.FC<HeaderTopProps> = ({ lang, setLang }) => {
               <p className="text-white">{text.workingHours}</p>
             </div>
           </div>
-          <div className="flex items-center gap-2 text-white ">
-            <div className="language-dropdown">
-              <button className="dropdown-btn">
-                <span className="lang-code">{selected.code}</span> {selected.label}
-                <span className="arrow">▼</span>
-              </button>
-              <div className="dropdown-menu">
-                {LANGUAGES.map((langObj) => (
-                  <div
-                    key={langObj.code}
-                    className={`dropdown-item${selected.code === langObj.code ? " selected" : ""}`}
-                    onClick={() => handleSelect(langObj)}
-                  >
-                    <span className="lang-code">{langObj.code}</span> {langObj.label}
-                  </div>
-                ))}
-              </div>
+        </div>
+        <div className="flex items-center gap-2 text-white">
+          <div className="language-dropdown">
+            <button className="dropdown-btn">
+              <span className="lang-code">{selected.code}</span> {selected.label}
+              <span className="arrow">▼</span>
+            </button>
+            <div className="dropdown-menu">
+              {LANGUAGES.map((langObj) => (
+                <div
+                  key={langObj.code}
+                  className={`dropdown-item${selected.code === langObj.code ? " selected" : ""}`}
+                  onClick={() => handleSelect(langObj)}
+                >
+                  <span className="lang-code">{langObj.code}</span> {langObj.label}
+                </div>
+              ))}
             </div>
           </div>
         </div>
