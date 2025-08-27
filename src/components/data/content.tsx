@@ -7,7 +7,7 @@ export const content = {
       email: "viencongnghe@ritm.vn",
       workingHours: "Mon - Fri: 8:00 - 17:00",
     },
-    menu:["Home", "About Us", "ORGANIZATION", "PRODUCTS", "NEWS", "LIBRARY", "CONTACT"],
+    menu:["Home", "About Us", "Organization", "Products", "News", "Library", "Contact"],
   },
   vi: {
     headertop: {
@@ -17,6 +17,6 @@ export const content = {
       email: "viencongnghe@ritm.vn",
       workingHours: "Thứ 2 - Thứ 6: 8:00 - 17:00",
   },
-    menu:["TRANG CHỦ", "VỀ CHÚNG TÔI", "CƠ CẤU TỔ CHỨC ", "SẢN PHẨM ", "TIN TỨC", "THƯ VIỆN", "LIÊN HỆ"],
+    menu:["Tranng chủ", "Về chúng tôi", "Cơ cấu tổ chức", "Sản phẩm", "Tin tức", "Thư viện", "Liên hệ"],
 },
 };
