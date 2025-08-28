@@ -1,10 +1,14 @@
-import React, { useState } from "react";
+
+import React from "react";
 import HeaderTop from "../Header/HeaderTop";
 import Menu from "../Header/Menu";
 
-const Head: React.FC = () => {
-  const [lang, setLang] = useState<"en" | "vi">("en");
+interface HeadProps {
+  lang: "en" | "vi";
+  setLang: React.Dispatch<React.SetStateAction<"en" | "vi">>;
+}
 
+const Head: React.FC<HeadProps> = ({ lang, setLang }) => {
   return (
     <header>
       <div className="">
